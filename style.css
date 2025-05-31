@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: green; 
+    background-image: url(/image/115807-1920x1080-desktop-1080p-netflix-background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 320px;
+    height:100vh;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ header img
+{
+    width: 3em;
+    height: 2em;
+    max-width: 100%;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin:  0; 
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li
+{
+    margin: 0em;
+    padding: 0 0.9em 0.2em 0;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+    font-size: 0.5rem;
+    text-transform: capitalize;
+}
+
+main
+{
+ margin:5em 0 0 0;   
+}
+
+main h2
+{
+    color: red;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2;
+    font-size:0.6
+}
+
+main h2 .original
+{
+    color: #fff;
+}
+
+main h1
+{
+    margin-bottom: 0.2em;
+    margin-top:1.2rem;
+    margin-left: 0.7em;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+main p
+{
+    margin-top: 1.6em;
+    color: #fff;
+    line-height: 2;
+    font-size: 0.7em;
+    word-spacing: 1;
+    font-weight: 600;
+}
+
+.btns
+{
+   margin-top: 2em;
+}
+
+.btns button
+{
+    width:7em;
+    height: 2em;
+    font-size: 0.5em;
+    font-weight: 300;
+}
+
+.btn1
+{
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+
+.btn2
+{
+    background-color: black;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+.container
+{
+}
+
+    header img
+{
+    width: 6em;
+    max-width: 100%;
+}
+
+nav ul li
+{
+    margin: 0.5em 0.2em;
+    padding: 0.2em 0.6em;
+}
+nav ul li a 
+{
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+    font-size: 0.5rem;
+    text-transform: capitalize;
+}
+
+main
+{
+ margin:5em 0 0 0;   
+}
+
+
+main h2
+{
+    color: red;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main h1
+{
+    margin-left: 0.9em;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+main p
+{
+    color: #fff;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btns button
+{
+    width:7em;
+    height: 2em;
+    font-size: 0.8em;
+    font-weight: 450;
+}
+
+.btn2
+{
+    background-color: black;
+    color: #fff;
+    border: 3px solid #fff;
+    margin-left: 2em;
+}
+
+
+}
