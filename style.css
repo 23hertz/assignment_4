@@ -4,28 +4,26 @@
     box-sizing: border-box;
 }
 
-body
+.container
 {
     width: 100%;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-    background-color: green; 
+    max-width: 960px;
+    height:100vh;
+    margin: 0px auto;
+    padding: 20px 30px;
     background-image: url(/image/115807-1920x1080-desktop-1080p-netflix-background-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     object-fit: cover;
-}
 
-.container
-{
-    width: 100%;
-    max-width: 320px;
-    height:100vh;
-    margin: 0px auto;
-    padding: 20px 0;
+     /* font-family: "Roboto", sans-serif; */
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "width" 5;
 }
 
 header
@@ -37,8 +35,8 @@ header
 
  header img
 {
-    width: 3em;
-    height: 2em;
+    width: 10em;
+    height: 5em;
     max-width: 100%;
 }
 
@@ -54,22 +52,27 @@ nav ul{
 
 nav ul li
 {
-    margin: 0em;
-    padding: 0 0.9em 0.2em 0;
+    margin: 1em 0.4em;
+    padding: 0 1.2em 0em 1.2em;
 }
 
 nav ul li a 
 {
     text-decoration: none;
-    color: red;
-    font-weight: 500;
-    font-size: 0.5rem;
+    color:#fff;
     text-transform: capitalize;
 }
 
+nav ul li a img
+{
+    width: 50px;
+    height: 40px;
+}
+
+
 main
 {
- margin:5em 0 0 0;   
+ margin:4em 0 0 0;   
 }
 
 main h2
@@ -77,9 +80,14 @@ main h2
     color: red;
     text-transform:uppercase;
     text-decoration: none;
-    font-size: 1rem;
-    line-height: 2;
-    font-size:0.6
+    font-size:2.5em;
+    padding-bottom: 0.8em;
+    font-weight:400;
+    /* font-family: "Roboto", sans-serif;  */
+      /* font-family: "Poppins", sans-serif; */
+        /* font-family: "Montserrat", sans-serif; */
+        font-family: sans-serif;
+    font-style: normal;
 }
 
 main h2 .original
@@ -89,35 +97,47 @@ main h2 .original
 
 main h1
 {
-    margin-bottom: 0.2em;
-    margin-top:1.2rem;
+    /* font-family: "Montserrat", sans-serif; */
+      font-family: "Montserrat", sans-serif;
+    margin-top:0.2rem;
+    margin-bottom:0.5rem;
     margin-left: 0.7em;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 3em;
+    font-style: normal;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.focus
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-top:1.5rem;
 }
 
 main p
 {
-    margin-top: 1.6em;
+    margin-top: 0.2em;
     color: #fff;
-    line-height: 2;
-    font-size: 0.7em;
-    word-spacing: 1;
-    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: 350;
 }
 
 .btns
 {
-   margin-top: 2em;
+   margin-top: 1em;
 }
 
 .btns button
 {
-    width:7em;
-    height: 2em;
-    font-size: 0.5em;
+    width:15em;
+    height: 4em;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -128,76 +148,9 @@ main p
     border: none;
 }
 
-.btn2
+.btwords
 {
-    background-color: black;
-    color: #fff;
-    border: 3px solid #fff;
-}
-
-@media screen and (max-width: 768px) {
-
-.container
-{
-}
-
-    header img
-{
-    width: 6em;
-    max-width: 100%;
-}
-
-nav ul li
-{
-    margin: 0.5em 0.2em;
-    padding: 0.2em 0.6em;
-}
-nav ul li a 
-{
-    text-decoration: none;
-    color: red;
-    font-weight: 500;
-    font-size: 0.5rem;
-    text-transform: capitalize;
-}
-
-main
-{
- margin:5em 0 0 0;   
-}
-
-
-main h2
-{
-    color: red;
-    text-transform:uppercase;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-main h1
-{
-    margin-left: 0.9em;
-    color: #fff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-main p
-{
-    color: #fff;
-    font-size: 0.5em;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.btns button
-{
-    width:7em;
-    height: 2em;
-    font-size: 0.8em;
-    font-weight: 450;
+    padding-left: 10px;
 }
 
 .btn2
@@ -205,8 +158,6 @@ main p
     background-color: black;
     color: #fff;
     border: 3px solid #fff;
-    margin-left: 2em;
+    margin-left: 15px;
 }
 
-
-}
